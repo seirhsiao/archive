@@ -1,2 +1,3 @@
 # Archive 
-## http://archive.seirhsiao.com 开发文档收集
+## Archive development document(开发文档收集)
+> http://archive.seirhsiao.com
