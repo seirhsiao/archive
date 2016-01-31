@@ -284,7 +284,7 @@ Serialization builder details
 -----------------------------
 
 All serialization builders outputs one file per source file and a few special
-files.  They also copy the reST source files in the directory ``_sources``
+files.  They also copy the reST source files in the directory ``sources``
 under the output directory.
 
 The :class:`.PickleHTMLBuilder` is a builtin subclass that implements the pickle
@@ -318,7 +318,7 @@ like structure) with these keys:
    relations, while ``prev`` and ``next`` are a single relation.
 
 ``sourcename``
-   The name of the source file under ``_sources``.
+   The name of the source file under ``sources``.
 
 The special files are located in the root output directory.  They are:
 

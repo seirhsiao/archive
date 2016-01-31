@@ -24,7 +24,7 @@
 
   
   
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="static/css/theme.css" type="text/css" />
   
 
   
@@ -35,7 +35,7 @@
         <link rel="prev" title="Sphinx Domains" href="domains.html"/> 
 
   
-  <script src="_static/js/modernizr.min.js"></script>
+  <script src="static/js/modernizr.min.js"></script>
 
 </head>
 
@@ -137,7 +137,7 @@
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/builders.txt" rel="nofollow"> View page source</a>
+            <a href="sources/builders.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -423,7 +423,7 @@ to standard output and to <code class="file docutils literal"><span class="pre">
 <div class="section" id="serialization-builder-details">
 <span id="serialization-details"></span><h2>Serialization builder details</h2>
 <p>All serialization builders outputs one file per source file and a few special
-files.  They also copy the reST source files in the directory <code class="docutils literal"><span class="pre">_sources</span></code>
+files.  They also copy the reST source files in the directory <code class="docutils literal"><span class="pre">sources</span></code>
 under the output directory.</p>
 <p>The <a class="reference internal" href="#sphinx.builders.html.PickleHTMLBuilder" title="sphinx.builders.html.PickleHTMLBuilder"><code class="xref py py-class docutils literal"><span class="pre">PickleHTMLBuilder</span></code></a> is a builtin subclass that implements the pickle
 serialization interface.</p>
@@ -449,7 +449,7 @@ dictionary with the keys <code class="docutils literal"><span class="pre">link</
 (title of the related document, as HTML).  <code class="docutils literal"><span class="pre">parents</span></code> is a list of
 relations, while <code class="docutils literal"><span class="pre">prev</span></code> and <code class="docutils literal"><span class="pre">next</span></code> are a single relation.</dd>
 <dt><code class="docutils literal"><span class="pre">sourcename</span></code></dt>
-<dd>The name of the source file under <code class="docutils literal"><span class="pre">_sources</span></code>.</dd>
+<dd>The name of the source file under <code class="docutils literal"><span class="pre">sources</span></code>.</dd>
 </dl>
 <p>The special files are located in the root output directory.  They are:</p>
 <dl class="docutils">
@@ -538,15 +538,15 @@ package is available on unpickling.</p>
             HAS_SOURCE:  true
         };
     </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="static/jquery.js"></script>
+      <script type="text/javascript" src="static/underscore.js"></script>
+      <script type="text/javascript" src="static/doctools.js"></script>
 
   
 
   
   
-    <script type="text/javascript" src="_static/js/theme.js"></script>
+    <script type="text/javascript" src="static/js/theme.js"></script>
   
 
   

@@ -204,7 +204,7 @@ Sphinx.
    different path.
 
    The path can be absolute or relative; if it is relative, it is relative to
-   the ``_static`` directory of the built docs.
+   the ``static`` directory of the built docs.
 
    For example, if you put MathJax into the static path of the Sphinx docs, this
    value would be ``MathJax/MathJax.js``.  If you host more than one Sphinx
@@ -229,7 +229,7 @@ package jsMath_.  It provides this config value:
    JSMath.  There is no default.
 
    The path can be absolute or relative; if it is relative, it is relative to
-   the ``_static`` directory of the built docs.
+   the ``static`` directory of the built docs.
 
    For example, if you put JSMath into the static path of the Sphinx docs, this
    value would be ``jsMath/easy/load.js``.  If you host more than one

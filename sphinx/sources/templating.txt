@@ -198,7 +198,7 @@ Overriding works like this::
 
    Add additional script files here, like this::
 
-      {% set script_files = script_files + ["_static/myscript.js"] %}
+      {% set script_files = script_files + ["static/myscript.js"] %}
 
 .. data:: css_files
 

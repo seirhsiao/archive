@@ -24,7 +24,7 @@
 
   
   
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="static/css/theme.css" type="text/css" />
   
 
   
@@ -35,7 +35,7 @@
         <link rel="prev" title="引言" href="intro.html"/> 
 
   
-  <script src="_static/js/modernizr.min.js"></script>
+  <script src="static/js/modernizr.min.js"></script>
 
 </head>
 
@@ -144,7 +144,7 @@
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/tutorial.txt" rel="nofollow"> View page source</a>
+            <a href="sources/tutorial.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -200,7 +200,7 @@ reStructuredText, 把许多文件组织成一份结构合理的文档.</p>
 </div>
 <p>以上精确展示toctree 与文档的转换.  所有的文档以文件名 <a class="reference internal" href="glossary.html#term-document-name"><span class="xref std std-term">document name</span></a>s的形式给出,
 不需文件后缀名;使用斜线作为目录分隔符.</p>
-<p><img alt="more info" class="align-middle" src="_images/more.png" /> 更多信息请查看 <a class="reference internal" href="markup/toctree.html#toctree-directive"><span>the toctree directive</span></a>.</p>
+<p><img alt="more info" class="align-middle" src="images/more.png" /> 更多信息请查看 <a class="reference internal" href="markup/toctree.html#toctree-directive"><span>the toctree directive</span></a>.</p>
 <p>现在可以创建toctree指令后的文件及目录了，
 它们的章节标题被插入到toctree指令的位置 (与 &#8220;maxdepth&#8221; 同一缩进) . 现在Sphinx已知道文档的分层结构.
 (toctree指令后的文件也可以有 <code class="docutils literal"><span class="pre">toctree</span></code> 指令, 会生成更深的层次结构.)</p>
@@ -211,7 +211,7 @@ reStructuredText, 把许多文件组织成一份结构合理的文档.</p>
 也有些特性被添加到Sphinx中.  例如, 可以引用参考文件链接 (对所有输出类型均有效) ，使用 <a class="reference internal" href="markup/inline.html#role-ref" title="ref role"><code class="xref rst rst-role docutils literal"><span class="pre">ref</span></code></a> 角色.</p>
 <p>又如, 浏览HTML版本时想要查看文档的源文件，只需点击边框栏的&#8221;显示源代码&#8221;.</p>
 <dl class="docutils">
-<dt><img alt="more info" class="align-middle" src="_images/more.png" />  <a class="reference internal" href="rest.html#rst-primer"><span>reStructuredText 简介</span></a> 详细介绍了reStructuredText</dt>
+<dt><img alt="more info" class="align-middle" src="images/more.png" />  <a class="reference internal" href="rest.html#rst-primer"><span>reStructuredText 简介</span></a> 详细介绍了reStructuredText</dt>
 <dd><a class="reference internal" href="markup/index.html#sphinxmarkup"><span>Sphinx标记的组成</span></a> 列出了Sphinx添加的全部标记.</dd>
 </dl>
 </div>
@@ -223,7 +223,7 @@ reStructuredText, 把许多文件组织成一份结构合理的文档.</p>
 </pre></div>
 </div>
 <p><em>sourcedir</em> 是源目录  <a class="reference internal" href="glossary.html#term-source-directory"><span class="xref std std-term">source directory</span></a> , <em>builddir</em> 则是放置生成的文档的根目录. <code class="xref std std-option docutils literal"><span class="pre">-b</span></code> 是创建工具的选项;这个例子创建HTML文件.</p>
-<p><img alt="more info" class="align-middle" src="_images/more.png" />  <a class="reference internal" href="invocation.html#invocation"><span>调用 sphinx-build</span></a> 列出工具 <strong class="program">sphinx-build</strong>
+<p><img alt="more info" class="align-middle" src="images/more.png" />  <a class="reference internal" href="invocation.html#invocation"><span>调用 sphinx-build</span></a> 列出工具 <strong class="program">sphinx-build</strong>
 支持的所有选项.</p>
 <dl class="docutils">
 <dt>而且, <strong class="program">sphinx-quickstart</strong> 脚本创建的 <code class="file docutils literal"><span class="pre">Makefile</span></code> 和</dt>
@@ -274,7 +274,7 @@ reStructuredText, 把许多文件组织成一份结构合理的文档.</p>
 <p>同样如果默认为 Python 主域 <code class="docutils literal"><span class="pre">py:</span></code> 可以省略.  但这不重要，Sphinx会自动发现包含 <code class="docutils literal"><span class="pre">enumerate()</span></code> 的文件并且链接.</p>
 <p>不同主域对于不同标示有特定的角色，以使输出格式更美观，在C/C++
 主域里增加了链接到元素类型的角色.</p>
-<p><img alt="more info" class="align-middle" src="_images/more.png" />  <a class="reference internal" href="domains.html#domains"><span>Sphinx Domains</span></a> 列出所有主域及其指令/角色.</p>
+<p><img alt="more info" class="align-middle" src="images/more.png" />  <a class="reference internal" href="domains.html#domains"><span>Sphinx Domains</span></a> 列出所有主域及其指令/角色.</p>
 </div>
 <div class="section" id="id7">
 <h2>基本配置</h2>
@@ -287,7 +287,7 @@ reStructuredText, 把许多文件组织成一份结构合理的文档.</p>
 自定义的配置一般不会由 <strong class="program">sphinx-quickstart</strong> 自动产生,需要自己添加标记.
 记住此文件使用Python 的操作符及字符串、数字、列表等.这个文件默认保存为UTF-8编码, 首行需要添加编码声明.
 插入非ASCII字符, 则需要使用Python Unicode 字符串 (如 <code class="docutils literal"><span class="pre">project</span> <span class="pre">=</span> <span class="pre">u'Exposé'</span></code> ).</p>
-<p><img alt="more info" class="align-middle" src="_images/more.png" /> 详情查看  <a class="reference internal" href="config.html#build-config"><span>The build configuration file</span></a> .</p>
+<p><img alt="more info" class="align-middle" src="images/more.png" /> 详情查看  <a class="reference internal" href="config.html#build-config"><span>The build configuration file</span></a> .</p>
 </div>
 <div class="section" id="id8">
 <h2>自动文档</h2>
@@ -306,7 +306,7 @@ reStructuredText, 把许多文件组织成一份结构合理的文档.</p>
 </div>
 <p>autodoc 需要导入到你的模块以便索取文档字符串.
 因此,在  <code class="file docutils literal"><span class="pre">conf.py</span></code> 需要为  <code class="xref py py-data docutils literal"><span class="pre">sys.path</span></code> 添加合适的路径.</p>
-<p><img alt="more info" class="align-middle" src="_images/more.png" />  详情请参考 <a class="reference internal" href="ext/autodoc.html#module-sphinx.ext.autodoc" title="sphinx.ext.autodoc: Include documentation from docstrings."><code class="xref py py-mod docutils literal"><span class="pre">sphinx.ext.autodoc</span></code></a> .</p>
+<p><img alt="more info" class="align-middle" src="images/more.png" />  详情请参考 <a class="reference internal" href="ext/autodoc.html#module-sphinx.ext.autodoc" title="sphinx.ext.autodoc: Include documentation from docstrings."><code class="xref py py-mod docutils literal"><span class="pre">sphinx.ext.autodoc</span></code></a> .</p>
 </div>
 <div class="section" id="id11">
 <h2>其他话题</h2>
@@ -375,15 +375,15 @@ reStructuredText, 把许多文件组织成一份结构合理的文档.</p>
             HAS_SOURCE:  true
         };
     </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="static/jquery.js"></script>
+      <script type="text/javascript" src="static/underscore.js"></script>
+      <script type="text/javascript" src="static/doctools.js"></script>
 
   
 
   
   
-    <script type="text/javascript" src="_static/js/theme.js"></script>
+    <script type="text/javascript" src="static/js/theme.js"></script>
   
 
   

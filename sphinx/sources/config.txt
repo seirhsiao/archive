@@ -107,7 +107,7 @@ General configuration
      :confval:`exclude_dirnames`)
 
    :confval:`exclude_patterns` is also consulted when looking for static files
-   in :confval:`html_static_path`.
+   in :confval:`htmlstatic_path`.
 
    .. versionadded:: 1.0
 
@@ -456,7 +456,7 @@ that use Sphinx' HTMLWriter class.
 
    The style sheet to use for HTML pages.  A file of that name must exist either
    in Sphinx' :file:`static/` path, or in one of the custom paths given in
-   :confval:`html_static_path`.  Default is the stylesheet given by the selected
+   :confval:`htmlstatic_path`.  Default is the stylesheet given by the selected
    theme.  If you only want to add or override a few things compared to the
    theme's stylesheet, use CSS ``@import`` to import the theme's stylesheet.
 
@@ -491,7 +491,7 @@ that use Sphinx' HTMLWriter class.
    exceed 200 pixels.  Default: ``None``.
 
    .. versionadded:: 0.4.1
-      The image file will be copied to the ``_static`` directory of the output
+      The image file will be copied to the ``static`` directory of the output
       HTML, so an already existing file with that name will be overwritten.
 
 .. confval:: html_favicon
@@ -503,7 +503,7 @@ that use Sphinx' HTMLWriter class.
 
    .. versionadded:: 0.4
 
-.. confval:: html_static_path
+.. confval:: htmlstatic_path
 
    A list of paths that contain custom static files (such as style sheets or
    script files).  Relative paths are taken as relative to the configuration
@@ -512,10 +512,10 @@ that use Sphinx' HTMLWriter class.
    :file:`default.css`.
 
    .. versionchanged:: 0.4
-      The paths in :confval:`html_static_path` can now contain subdirectories.
+      The paths in :confval:`htmlstatic_path` can now contain subdirectories.
 
    .. versionchanged:: 1.0
-      The entries in :confval:`html_static_path` can now be single files.
+      The entries in :confval:`htmlstatic_path` can now be single files.
 
 .. confval:: html_last_updated_fmt
 
@@ -643,7 +643,7 @@ that use Sphinx' HTMLWriter class.
 .. confval:: html_copy_source
 
    If true, the reST sources are included in the HTML build as
-   :file:`_sources/{name}`.  The default is ``True``.
+   :file:`sources/{name}`.  The default is ``True``.
 
    .. warning::
 
@@ -836,8 +836,8 @@ the `Dublin Core metadata <http://dublincore.org/>`_.
    template filename is empty, no html cover page is created.  No cover at all
    is created if the tuple is empty.  Examples::
 
-      epub_cover = ('_static/cover.png', 'epub-cover.html')
-      epub_cover = ('_static/cover.png', '')
+      epub_cover = ('static/cover.png', 'epub-cover.html')
+      epub_cover = ('static/cover.png', '')
       epub_cover = ()
 
    The default value is ``()``.

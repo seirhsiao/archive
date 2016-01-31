@@ -306,7 +306,7 @@ reST 支持图像指令 (:dudir:`ref <image>`), 如下::
 例如，在文件 ``sketch/spam.rst`` 引用图像 ``images/spam.png`` ，则使用 ``../images/spam.png`` 或者
 ``/images/spam.png``.
 
-Sphinx 会自动将图像文件拷贝到输出目录的子目录里，( 输出HTML时目录为 ``_static`` )
+Sphinx 会自动将图像文件拷贝到输出目录的子目录里，( 输出HTML时目录为 ``static`` )
 
 图像的大小选项 (``width`` 及 ``height``) :
 如果没有单位或单位为像素, 给定的尺寸信息仅在输出通道支持像素时才有用 ( 如输出LaTeX 没用).
